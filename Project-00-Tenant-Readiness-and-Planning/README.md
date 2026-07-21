@@ -95,7 +95,7 @@ During this project I completed the following activities:
 
 ### Figure 1 – Microsoft Entra Tenant Baseline
 
-![Figure 1](Figures/Figure-01-Entra-Tenant-Baseline.jpg)
+![Figure 1](Figures/Figure-01-Entra-Tenant-Baseline.png)
 
 ---
 
