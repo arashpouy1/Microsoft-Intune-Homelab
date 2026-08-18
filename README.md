@@ -3,7 +3,7 @@
 
 A hands-on Microsoft Intune home lab designed to develop practical endpoint management skills using Microsoft Intune and Microsoft 365.
 
-This repository documents my hands-on journey from initial tenant preparation through to enterprise-style device management, compliance, application deployment, endpoint security and troubleshooting. Every project is performed in a realistic lab environment and documented with implementation steps, screenshots, lessons learned and interview preparation notes.
+This repository documents my hands-on journey from initial tenant preparation through to enterprise-style device management, compliance, application deployment, endpoint security and troubleshooting. Every project is performed in a realistic lab environment and documented with implementation steps, screenshots, lessons learned and supporting technical documentation.
 
 ---
 
