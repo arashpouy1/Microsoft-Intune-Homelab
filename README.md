@@ -61,69 +61,37 @@ The environment is designed to simulate a small-to-medium business with realisti
 
 ---
 
-# 📚 Project Roadmap
+## 🗺️ Project Roadmap
 
-| Project | Status | Focus |
-|---------|:------:|----------------------------------------------|
-| Project 00 | ✅ | Intune Readiness Assessment & Tenant Planning |
-| Project 01 | ⬜ | Intune Foundations & Administration |
-| Project 02 | ⬜ | Device Enrolment & Autopilot |
-| Project 03 | ⬜ | Configuration Profiles & Settings Catalog |
-| Project 04 | ⬜ | Compliance Policies & Conditional Access |
-| Project 05 | ⬜ | Application Deployment & Win32 Apps |
-| Project 06 | ⬜ | Endpoint Security & BitLocker |
-| Project 07 | ⬜ | Windows Update Rings & Lifecycle |
-| Project 08 | ⬜ | Troubleshooting & IT Operations |
-| Project 09 | ⬜ | Capstone Enterprise Implementation |
+The projects build progressively on the same Microsoft 365 and Intune tenant. Devices, users, groups, policies and configurations created in earlier projects are reused and extended in later projects.
 
+| Project | Focus | Status |
+|---|---|---|
+| [Project 00 – Intune Readiness Assessment & Tenant Planning](Project-00-Tenant-Readiness-and-Planning/README.md) | Tenant assessment, licensing, MDM authority, enrolment readiness and implementation planning | ✅ Complete |
+| [Project 01 – Intune Foundations & Administration](Project-01-Intune-Foundations-and-Administration/README.md) | Intune administration, MDM enrolment scope, Windows pilot preparation, Microsoft Entra join, automatic enrolment, troubleshooting and delegated administration | ✅ Complete |
+| Project 02 – Device Enrolment & Autopilot | Windows enrolment methods, Microsoft Entra registered vs joined devices, enrolment controls and Windows Autopilot | ⬜ Planned |
+| Project 03 – Configuration Profiles & Settings Catalog | Device configuration profiles, Settings Catalog, policy assignment and validation | ⬜ Planned |
+| Project 04 – Compliance Policies & Conditional Access | Device compliance, compliance evaluation, Conditional Access integration and access enforcement | ⬜ Planned |
+| Project 05 – Application Deployment & Win32 Apps | Microsoft 365 Apps, Store apps, Win32 packaging, assignments, detection and deployment monitoring | ⬜ Planned |
+| Project 06 – Endpoint Security & BitLocker | Endpoint security policies, Microsoft Defender controls, BitLocker configuration and recovery | ⬜ Planned |
+| Project 07 – Windows Update Rings & Lifecycle | Windows Update for Business, update rings, feature updates and endpoint lifecycle management | ⬜ Planned |
+| Project 08 – Troubleshooting & IT Operations | Intune troubleshooting, device diagnostics, policy failures, enrolment issues and operational support | ⬜ Planned |
+| Project 09 – Capstone Enterprise Implementation | End-to-end enterprise endpoint management combining enrolment, configuration, compliance, applications and security | ⬜ Planned |
 ---
 
-# 📁 Repository Structure
+## 📁 Project Documentation
 
-```
-Microsoft-Intune-Homelab
-│
-├── README.md
-│
-├── Project-00-Tenant-Readiness-and-Planning
-├── Project-01-Device-Enrolment
-├── Project-02-Compliance-Policies
-├── Project-03-Configuration-Profiles
-├── Project-04-Application-Management
-├── Project-05-Windows-Updates
-├── Project-06-Microsoft-Defender
-├── Project-07-Conditional-Access
-├── Project-08-Troubleshooting
-└── Project-09-Capstone
-```
-
-Each project contains:
+Each completed project includes:
 
 - Project README
 - Implementation documentation
-- Screenshots
+- Screenshots and implementation evidence
 - Lessons learned
-- Interview questions
 - Supporting documentation where applicable
 
 ---
 
-# 📈 Progress
 
-Current Status
-
-- ✅ Project 00 completed
-- ⬜ Project 01 not started
-- ⬜ Project 02 not started
-- ⬜ Project 03 not started
-- ⬜ Project 04 not started
-- ⬜ Project 05 not started
-- ⬜ Project 06 not started
-- ⬜ Project 07 not started
-- ⬜ Project 08 not started
-- ⬜ Project 09 not started
-
----
 
 # 🚀 Future Enhancements
 
