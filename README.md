@@ -93,7 +93,7 @@ Each completed project includes:
 
 
 
-# 🚀 Future Enhancements
+## 🚀 Future Enhancements
 
 Future projects will expand the environment to include:
 
@@ -107,7 +107,7 @@ Future projects will expand the environment to include:
 
 ---
 
-# 📖 References
+## 📖 References
 
 This repository is based on practical hands-on learning using:
 
