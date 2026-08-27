@@ -69,7 +69,7 @@ The projects build progressively on the same Microsoft 365 and Intune tenant. De
 |---|---|---|
 | [Project 00 – Intune Readiness Assessment & Tenant Planning](Project-00-Tenant-Readiness-and-Planning/README.md) | Tenant assessment, licensing, MDM authority, enrolment readiness and implementation planning | ✅ Complete |
 | [Project 01 – Intune Foundations & Administration](Project-01-Intune-Foundations-and-Administration/README.md) | Intune administration, MDM enrolment scope, Windows pilot preparation, Microsoft Entra join, automatic enrolment, troubleshooting and delegated administration | ✅ Complete |
-| Project 02 – Device Enrolment & Autopilot | Windows enrolment methods, Microsoft Entra registered vs joined devices, enrolment controls and Windows Autopilot | ⬜ Planned |
+| [Project 02 – Device Enrollment & Autopilot](Project-02-Device-Enrollment-and-Autopilot/README.md) | Windows enrollment methods, Microsoft Entra registered vs joined devices, automatic MDM enrollment, device lifecycle actions and Windows Autopilot provisioning | ✅ Complete |
 | Project 03 – Configuration Profiles & Settings Catalog | Device configuration profiles, Settings Catalog, policy assignment and validation | ⬜ Planned |
 | Project 04 – Compliance Policies & Conditional Access | Device compliance, compliance evaluation, Conditional Access integration and access enforcement | ⬜ Planned |
 | Project 05 – Application Deployment & Win32 Apps | Microsoft 365 Apps, Store apps, Win32 packaging, assignments, detection and deployment monitoring | ⬜ Planned |
