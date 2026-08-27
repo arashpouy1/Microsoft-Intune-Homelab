@@ -96,7 +96,7 @@ The lab used:
 This allows selected licensed users to automatically enroll Microsoft Entra joined Windows devices into Intune.
 
 <p align="center">
-  <img src="Figures/P02-01-MDM-User-Scope.jpg" alt="MDM User Scope" width="850">
+  <img src="Figures/P02-01-MDM-User-Scope.jpg" alt="MDM User Scope" width="600">
 </p>
 
 A key learning point was that Microsoft Entra join and Intune enrollment are separate processes.
@@ -124,13 +124,13 @@ The initial state confirmed that the device was neither Microsoft Entra joined n
 Emily's Bright Horizons Health work account was then connected through Windows.
 
 <p align="center">
-  <img src="Figures/P02-04-BYOD-Work-Account-Connection.jpg" alt="BYOD Work Account Connection" width="650">
+  <img src="Figures/P02-04-BYOD-Work-Account-Connection.jpg" alt="BYOD Work Account Connection" width="550">
 </p>
 
 The device successfully became Microsoft Entra registered and was enrolled into Intune as a personal device.
 
 <p align="center">
-  <img src="Figures/P02-05-BYOD-Registration-Success.jpg" alt="BYOD Registration Success" width="800">
+  <img src="Figures/P02-05-BYOD-Registration-Success.jpg" alt="BYOD Registration Success" width="500">
 </p>
 
 This demonstrated the typical BYOD model:
@@ -180,7 +180,7 @@ A separate corporate-device scenario was tested using a manual Microsoft Entra j
 From Windows, the option **Join this device to Microsoft Entra ID** was selected.
 
 <p align="center">
-  <img src="Figures/P02-09-Manual-Entra-Join-Option.jpg" alt="Manual Entra Join" width="650">
+  <img src="Figures/P02-09-Manual-Entra-Join-Option.jpg" alt="Manual Entra Join" width="500">
 </p>
 
 After the join, `dsregcmd /status` confirmed:
