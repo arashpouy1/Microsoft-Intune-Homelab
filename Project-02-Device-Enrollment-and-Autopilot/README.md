@@ -84,7 +84,7 @@ The primary test user for corporate enrollment and Autopilot was **Emily Nguyen*
 
 ---
 
-# 1. Automatic MDM Enrollment
+## 1. Automatic MDM Enrollment
 
 Automatic Intune enrollment was configured using the Microsoft Intune MDM user scope.
 
@@ -105,7 +105,7 @@ A device can successfully become Microsoft Entra joined while failing to automat
 
 ---
 
-# 2. BYOD / Microsoft Entra Registered Device
+## 2. BYOD / Microsoft Entra Registered Device
 
 The first enrollment scenario represented a personal Windows device.
 
@@ -149,7 +149,7 @@ The device retained a personal Windows identity while allowing organisational ma
 
 ---
 
-# 3. Device Lifecycle – Intune Wipe
+## 3. Device Lifecycle – Intune Wipe
 
 The registered device was used to test the Intune **Wipe** remote action.
 
@@ -173,7 +173,7 @@ This reinforced the importance of user communication, device ownership classific
 
 ---
 
-# 4. Manual Microsoft Entra Join
+## 4. Manual Microsoft Entra Join
 
 A separate corporate-device scenario was tested using a manual Microsoft Entra join.
 
@@ -219,7 +219,7 @@ The exercise also highlighted why enterprise deployments should deliberately con
 
 ---
 
-# 5. Preparing the Network for Windows Autopilot
+## 5. Preparing the Network for Windows Autopilot
 
 Windows Autopilot requires reliable network connectivity during OOBE.
 
@@ -239,7 +239,7 @@ This allowed the device to reach Microsoft cloud services automatically during t
 
 ---
 
-# 6. Windows Autopilot Hardware Registration
+## 6. Windows Autopilot Hardware Registration
 
 A dedicated Windows 11 VM was prepared for the Autopilot test.
 
@@ -258,13 +258,13 @@ Get-WindowsAutopilotInfo -OutputFile AutopilotHWID.csv
 ```
 
 <p align="center">
-  <img src="Figures/P02-17-Autopilot-Hardware-Hash-Collection.jpg" alt="Hardware Hash Collection" width="850">
+  <img src="Figures/P02-17-Autopilot-Hardware-Hash-Collection.jpg" alt="Hardware Hash Collection" width="700">
 </p>
 
 The resulting CSV was imported into Windows Autopilot in Intune.
 
 <p align="center">
-  <img src="Figures/P02-18-Autopilot-Hardware-Hash-Import.jpg" alt="Autopilot Hardware Hash Import" width="900">
+  <img src="Figures/P02-18-Autopilot-Hardware-Hash-Import.jpg" alt="Autopilot Hardware Hash Import" width="600">
 </p>
 
 After registration, a corresponding Autopilot-related device object became visible in Microsoft Entra ID.
@@ -279,7 +279,7 @@ The actual endpoint join state should therefore be validated from Windows using 
 
 ---
 
-# 7. Autopilot Deployment Profile
+## 7. Autopilot Deployment Profile
 
 A user-driven Windows Autopilot deployment profile was created:
 
@@ -340,7 +340,7 @@ Automatic Intune enrollment
 
 ---
 
-# 8. Preparing Windows for OOBE
+## 8. Preparing Windows for OOBE
 
 Because the Autopilot test used an existing Windows VM rather than a factory-new computer, the VM needed to be returned to OOBE.
 
@@ -358,9 +358,9 @@ Several real troubleshooting issues were encountered before Sysprep successfully
 
 ---
 
-# 9. Troubleshooting
+## 9. Troubleshooting
 
-## Reserved Storage
+### Reserved Storage
 
 Sysprep initially failed because Windows Reserved Storage was in use.
 
@@ -374,7 +374,7 @@ DISM.exe /Online /Set-ReservedStorageState /State:Disabled
   <img src="Figures/P02-25-Sysprep-Troubleshooting-Reserved-Storage.jpg" alt="Reserved Storage Troubleshooting" width="850">
 </p>
 
-## BitLocker
+### BitLocker
 
 Sysprep later reported that BitLocker encryption was enabled on the operating system volume.
 
@@ -390,7 +390,7 @@ A key lesson was:
 
 > BitLocker Protection Off does not necessarily mean that the disk is decrypted.
 
-## AppX Provisioning Conflict
+### AppX Provisioning Conflict
 
 Sysprep also failed because a Windows handwriting package was installed for a user but was not provisioned for all users.
 
@@ -398,7 +398,7 @@ The affected AppX packages were identified and removed before Sysprep was attemp
 
 After resolving Reserved Storage, BitLocker, and AppX issues, Sysprep completed successfully.
 
-## MFA Re-registration
+### MFA Re-registration
 
 During Autopilot OOBE, Emily's Microsoft Authenticator registration no longer matched the state of the Authenticator application on the mobile device.
 
@@ -408,7 +408,7 @@ This provided a practical example of MFA recovery during endpoint provisioning.
 
 ---
 
-# 10. Windows Autopilot Provisioning
+## 10. Windows Autopilot Provisioning
 
 After Sysprep, the device restarted into Windows OOBE.
 
@@ -431,7 +431,7 @@ Windows Autopilot then:
 
 ---
 
-# 11. Final Validation
+## 11. Final Validation
 
 The successfully provisioned device was named:
 
@@ -441,7 +441,7 @@ BHH-528789
 
 This confirmed that the Autopilot naming template had been applied.
 
-## Windows Validation
+### Windows Validation
 
 `dsregcmd /status` confirmed:
 
@@ -455,7 +455,7 @@ DeviceAuthStatus : SUCCESS
   <img src="Figures/P02-27-Autopilot-Entra-Join-dsregcmd.jpg" alt="Autopilot Entra Join" width="850">
 </p>
 
-## Intune Validation
+### Intune Validation
 
 The device successfully appeared in Microsoft Intune.
 
@@ -476,7 +476,7 @@ The device overview confirmed:
   <img src="Figures/P02-29-BHH-528789-Intune-Overview.jpg" alt="Intune Device Overview" width="950">
 </p>
 
-## Microsoft Entra Validation
+### Microsoft Entra Validation
 
 Microsoft Entra ID showed the same device as:
 
