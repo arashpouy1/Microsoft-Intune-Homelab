@@ -298,7 +298,7 @@ The policy was assigned to:
 
 ---
 
-# 9. Same Device, Different User
+## 9. Same Device, Different User
 
 This became one of the clearest demonstrations in the project.
 
@@ -308,8 +308,16 @@ On the same physical Windows endpoint:
 - **Arash Pouya**, who was not targeted by the user policy, could open Task Manager normally.
 
 <p align="center">
-  <img src="screenshots/16-task-manager-available-arash-nontargeted-user.jpg" width="850" alt="Task Manager available to non-targeted user">
+  <img src="screenshots/31-Alex-Task-Manager-Disabled.png" width="850" alt="Task Manager disabled for targeted user Alex Johnson">
 </p>
+
+<p align="center"><em>Figure: Alex Johnson was targeted by the user restriction policy and received the message “Task Manager has been disabled by your administrator.”</em></p>
+
+<p align="center">
+  <img src="screenshots/16-task-manager-available-arash-nontargeted-user.jpg" width="850" alt="Task Manager available for non-targeted user Arash Pouya">
+</p>
+
+<p align="center"><em>Figure: Arash Pouya was not targeted by the user restriction policy and could open Task Manager normally on the same device.</em></p>
 
 At the same time, device-targeted settings such as the corporate wallpaper continued to follow the machine.
 
@@ -582,7 +590,7 @@ Because the source system was on another routed subnet, the rule did not match.
 The rule was narrowed to the required source subnet rather than opening it to `Any`.
 
 <p align="center">
-  <img src="screenshots/28-firewall-remote-subnet-scope.jpg" width="850" alt="Windows Firewall remote subnet scope">
+  <img src="screenshots/28-firewall-remote-subnet-scope.jpg" width="500" alt="Windows Firewall remote subnet scope">
 </p>
 
 ### Lesson
@@ -613,7 +621,7 @@ A Microsoft 365 Business Premium licence was assigned to restore Intune function
 An initial group-based licensing attempt exposed a mutually exclusive service-plan conflict caused by an older Microsoft 365 E3 assignment.
 
 <p align="center">
-  <img src="screenshots/29-license-assignment-conflict-error.jpg" width="850" alt="Microsoft licensing assignment conflict">
+  <img src="screenshots/29-license-assignment-conflict-error.jpg" width="500" alt="Microsoft licensing assignment conflict">
 </p>
 
 After the conflicting licence assignment was removed, Business Premium assignment completed successfully and Intune access was restored.
@@ -804,14 +812,6 @@ This project provided hands-on experience with:
 - Windows Firewall scope troubleshooting
 - Microsoft 365 / Intune licensing troubleshooting
 - Production policy review
-
----
-
-# Interview Talking Point
-
-A useful example from this project is the deliberate Task Manager policy conflict:
-
-> I created two Intune Settings Catalog profiles that targeted the same user setting with opposite values. Intune reported the setting as Conflict. Rather than relying only on the portal, I reproduced the behaviour on the Windows endpoint, generated the MDM Diagnostic Report, confirmed the effective `DisableTaskMgr` state, and queried the DeviceManagement Enterprise Diagnostics event log with PowerShell. I then removed the conflicting assignment, synchronised the endpoint and confirmed the setting returned to Succeeded. The exercise reinforced the importance of correlating Intune reporting, Windows policy state and actual user experience.
 
 ---
 
