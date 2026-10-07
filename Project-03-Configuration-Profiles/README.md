@@ -99,7 +99,7 @@ The initial policy was named:
 `Windows-Personalization-Pilot`
 
 <p align="center">
-  <img src="screenshots/03-personalization-profile-summary.jpg" width="850" alt="Windows Personalization Pilot profile summary">
+  <img src="screenshots/03-personalization-profile-summary.jpg" width="600" alt="Windows Personalization Pilot profile summary">
 </p>
 
 ---
@@ -334,7 +334,7 @@ It configured the same setting as the user restriction profile, but with the opp
 **Remove Task Manager (User) = Disabled**
 
 <p align="center">
-  <img src="screenshots/17-conflict-test-opposite-setting-review.jpg" width="850" alt="Conflict test profile with opposite Task Manager setting">
+  <img src="screenshots/17-conflict-test-opposite-setting-review.jpg" width="500" alt="Conflict test profile with opposite Task Manager setting">
 </p>
 
 The temporary policy was assigned to the same pilot user group.
@@ -344,7 +344,7 @@ Intune subsequently reported the setting as:
 **Conflict**
 
 <p align="center">
-  <img src="screenshots/18-intune-policy-conflict-status.jpg" width="850" alt="Intune policy setting reporting Conflict">
+  <img src="screenshots/18-intune-policy-conflict-status.jpg" width="600" alt="Intune policy setting reporting Conflict">
 </p>
 
 The test intentionally avoided assuming which value should "win".
