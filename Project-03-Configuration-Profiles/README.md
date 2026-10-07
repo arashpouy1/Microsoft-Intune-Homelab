@@ -285,7 +285,7 @@ The configured setting was:
 **Administrative Templates → System → Ctrl Alt Del Options → Remove Task Manager (User) = Enabled**
 
 <p align="center">
-  <img src="screenshots/14-task-manager-user-restriction-config.jpg" width="850" alt="Remove Task Manager user restriction configuration">
+  <img src="screenshots/14-task-manager-user-restriction-config.jpg" width="800" alt="Remove Task Manager user restriction configuration">
 </p>
 
 The policy was assigned to:
@@ -293,7 +293,7 @@ The policy was assigned to:
 `Intune-Users-Pilot`
 
 <p align="center">
-  <img src="screenshots/15-user-restrictions-pilot-assignment.jpg" width="850" alt="User restrictions pilot assignment">
+  <img src="screenshots/15-user-restrictions-pilot-assignment.jpg" width="600" alt="User restrictions pilot assignment">
 </p>
 
 ---
