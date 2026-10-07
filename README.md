@@ -118,4 +118,4 @@ This repository is based on practical hands-on learning using:
 
 ---
 
-**Last Updated:** August 2026
+**Last Updated:** October 2026
